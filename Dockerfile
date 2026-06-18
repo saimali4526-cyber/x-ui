@@ -17,5 +17,4 @@ RUN apk add --no-cache ca-certificates tzdata libcap nftables
 
 COPY --from=builder /app/build/ /app/
 
-VOLUME [ "/etc/x-ui" ]
 CMD [ "./x-ui" ]
